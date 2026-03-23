@@ -11,12 +11,12 @@ practice what you have seen in the last lectures.
 
 In this exercise, you will implement a simple application to track the films that a person wants to watch and the ones they have already watched. Each film is represented by the following fields:
 
--   **Id**: unique numerical id (mandatory)
--   **Title**: string (mandatory)
--   **Favorite**: boolean (mandatory, default: `false`)
--   **Watch date**: date (optional)
--   **Rating**: number between 1 and 5 (optional)
--   **User id**: numerical id (mandatory, default: `1`)
+- **Id**: unique numerical id (mandatory)
+- **Title**: string (mandatory)
+- **Favorite**: boolean (mandatory, default: `false`)
+- **Watch date**: date (optional)
+- **Rating**: number between 1 and 5 (optional)
+- **User id**: numerical id (mandatory, default: `1`)
 
 ### Step 1: Film Constructor
 
@@ -36,7 +36,8 @@ Populate the `FilmLibrary` using this method.
 
 Print the entire list of films stored in the `FilmLibrary`, including all their fields.
 
-#### Example Output     
+#### Example Output
+
     Id: 1, Title: Pulp Fiction, Favorite: true, Watch date: March 10, 2025, Rating: 5, User id: 1
     Id: 2, Title: 21 Grams, Favorite: true, Watch date: March 17, 2025, Rating: 4, User id: 1
     Id: 3, Title: Star Wars, Favorite: false, Watch date: null, Rating: null, User id: 1
@@ -45,8 +46,8 @@ Print the entire list of films stored in the `FilmLibrary`, including all their 
 
 ### Hints
 
--   Use the **day.js** library to handle dates.
--   Use the **functional programming paradigm** to manipulate the array of films.
+- Use the **day.js** library to handle dates.
+- Use the **functional programming paradigm** to manipulate the array of films.
 
 ------------------------------------------------------------------------
 
@@ -58,7 +59,7 @@ Extend the `FilmLibrary` object with the following functionalities:
 
 Sort films by **ascending watch date**.
 
--   Unwatched films must be placed at the end.
+- Unwatched films must be placed at the end.
 
 #### Example Output
 
@@ -74,7 +75,7 @@ Sort films by **ascending watch date**.
 
 Sort films by **decreasing rating**.
 
--   Films without a rating must be placed at the end.
+- Films without a rating must be placed at the end.
 
 #### Example Output
 
@@ -85,7 +86,6 @@ Sort films by **decreasing rating**.
     Id: 4, Title: Matrix, Favorite: false, Watch date: null, Rating: null, User: 1
 
 ------------------------------------------------------------------------
-
 
 ### 3. Remove a Film
 
