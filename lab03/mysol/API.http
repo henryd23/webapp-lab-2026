@@ -1,0 +1,60 @@
+GET http://localhost:3000/api/films HTTP/1.1
+
+###
+
+GET http://localhost:3000/api/films?filter=favorites HTTP/1.1
+
+###
+
+GET http://localhost:3000/api/films/2 HTTP/1.1
+
+###
+
+POST http://localhost:3000/api/films HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Inception",
+    "isFavorite": true,
+    "watchDate": "2026-01-15",
+    "rating": 5,
+    "userId": 1
+}
+
+###
+
+PUT http://localhost:3000/api/films/2 HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Hangover",
+    "isFavorite": true,
+    "watchDate": "2026-02-10",
+    "rating": 3,
+    "userId": 3
+}
+
+###
+
+PATCH http://localhost:3000/api/films/4/rating HTTP/1.1
+content-type: application/json
+
+{
+    "rating": 3
+}
+
+###
+
+PATCH http://localhost:3000/api/films/5/isfavorite HTTP/1.1
+content-type: application/json
+
+{
+    "isFavorite": true
+}
+
+
+###
+
+DELETE http://localhost:3000/api/films/1 HTTP/1.1
+
+###
